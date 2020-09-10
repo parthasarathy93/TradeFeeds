@@ -3,10 +3,10 @@
 
 # Prerequisites:
 
-Java Version -1.8
-Kafka 
-Apache Spark
-Mysql 
+1.Java Version -1.8
+2.Kafka 
+3.Apache Spark
+4.Mysql 
 
 
 # Solution:
@@ -150,7 +150,7 @@ The App Service is a spring boot application which exposes the api for users. Th
       Unzip the spark - https://archive.apache.org/dist/spark/spark-2.3.0/
       
       
-      Add dependency files for kafka streaming and mysql connection from the 
+      Add dependency files for kafka streaming and mysql connection from the SparkJars Folder
       
       
       Run the command :  ./bin/spark-submit --name "feeds" --master local[4] --class com.company.matcher.FeedMatcher jars/matcher.jar
@@ -163,6 +163,8 @@ The App Service is a spring boot application which exposes the api for users. Th
       1. guava-27.1-jre jar - https://jar-download.com/artifacts/com.google.guava/guava/27.1-jre/source-code
       2. hibernate 5.4.10 jar - https://jar-download.com/artifacts/org.hibernate/hibernate-entitymanager/5.4.10.Final/source-code
       
+      
+      Also these dependencies are uploaded under AppJars
       
       Build the project and run it 
       
