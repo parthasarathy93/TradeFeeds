@@ -83,17 +83,17 @@ The App Service is a spring boot application which exposes the api for users. Th
       
    How app shows unmatcheddata?
       
-      Every time a feed is produced under unmatched topic  is a fresh list and updated list , we dont need to care for the previous ones,We have to make sure every       time we consume we have a fresh list of unmatched records.
+      Every time a feed is produced under unmatched topic  is a fresh list and updated list , we dont 
+      need to care for the previous ones,We have to make sure everytime we consume we have a fresh list of unmatched records.
       
-      A Kafka consumer Program runs in the app , where it listens to the kafka consumer for every 3seconds and maintains that data in a cache.
-      Since we have two consumer groups , the offsets that they read from will be almost same
+      A Kafka consumer Program runs in the app , where it listens to the kafka consumer for every 3seconds and 
+      maintains that data in a cache. Since we have two consumer groups , the offsets that they read from will be almost same
       For simplicity sake,we have used a singleton instance of a class with a list has the cache which gets directly replaced after each consumption
       
       User's api requests are served from this cache
       
       
-      
-        
+         
  Note:  
       
       All the api results are paginated , the key content has the data a
@@ -147,15 +147,21 @@ The App Service is a spring boot application which exposes the api for users. Th
         
         
    # Start Matching Service:
-      Unzip the spark 
+      Unzip the spark - https://archive.apache.org/dist/spark/spark-2.3.0/
       
-      Add dependency files
+      
+      Add dependency files for kafka streaming and mysql connection from the 
       
       
       Run the command :  ./bin/spark-submit --name "feeds" --master local[4] --class com.company.matcher.FeedMatcher jars/matcher.jar
       
       
    # Start spring boot app
+        
+      This project has some external dependencies which has to be downloaded manually for the app to run
+      
+      1. guava-27.1-jre jar - https://jar-download.com/artifacts/com.google.guava/guava/27.1-jre/source-code
+      2. hibernate 5.4.10 jar - https://jar-download.com/artifacts/org.hibernate/hibernate-entitymanager/5.4.10.Final/source-code
    
    
       
