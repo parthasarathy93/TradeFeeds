@@ -8,7 +8,7 @@ The Solution consists of three services
 Service discovery happens between services through properties file
 
 
-#App Service:
+# App Service:
 
 The App Service is a spring boot application which exposes the api for users. The apis are
 
