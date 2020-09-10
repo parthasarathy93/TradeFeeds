@@ -1,11 +1,18 @@
 # TradeFeeds
 
 
+Spring App Code is under Folder SpringSrc
+
+Matching Code is under Folder Sparksrc
+
 # Prerequisites:
 
 1.Java Version -1.8
+
 2.Kafka 
+
 3.Apache Spark
+
 4.Mysql 
 
 
