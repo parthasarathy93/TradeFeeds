@@ -43,7 +43,7 @@ The App Service is a spring boot application which exposes the api for users. Th
        buyer
        seller
        stock
-       tradedte
+       tradedqte
       
       {"content":[{"id":1,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":3,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":5,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":8,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":11,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":12,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":15,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":16,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":19,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"},{"id":20,"buyer":"Party B","seller":"Party A","stock":" IBM","price":110,"tradedate":"2020-09-10"}],"pageable":{"sort":{"sorted":true,"unsorted":false,"empty":false},"offset":0,"pageNumber":0,"pageSize":10,"unpaged":false,"paged":true},"last":true,"totalPages":1,"totalElements":10,"numberOfElements":10,"first":true,"sort":{"sorted":true,"unsorted":false,"empty":false},"size":10,"number":0,"empty":false}
       
@@ -158,10 +158,17 @@ The App Service is a spring boot application which exposes the api for users. Th
       
    # Start spring boot app
         
-      This project has some external dependencies which has to be downloaded manually for the app to run
+      This project has some external dependencies apart from maven dependencies which has to be downloaded manually for the app to run
       
       1. guava-27.1-jre jar - https://jar-download.com/artifacts/com.google.guava/guava/27.1-jre/source-code
       2. hibernate 5.4.10 jar - https://jar-download.com/artifacts/org.hibernate/hibernate-entitymanager/5.4.10.Final/source-code
+      
+      
+      Build the project and run it 
+      
+      
+      
+      
    
    
       
